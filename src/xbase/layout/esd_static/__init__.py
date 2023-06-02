@@ -46,7 +46,13 @@ class ESDStatic(TemplateBase):
             cell_name='The layout cell name.',
             tr_widths='Track widths dictionary',
             tr_spaces='Track spaces dictionary',
+            top_layer='Optional way to specify pin layer.\
+                       Defaults to value in tech_params.'
         )
+
+    @classmethod
+    def get_default_param_values(cls) -> Mapping[str, Any]:
+        return dict(top_layer=None)
 
     def draw_layout(self) -> None:
         lib_name: str = self.params['lib_name']
@@ -55,7 +61,10 @@ class ESDStatic(TemplateBase):
 
         # --- Placement --- #
         esd_info = self.grid.tech_info.tech_params['esd']
-        self._top_layer = top_layer = esd_info['top_layer']
+        top_layer = self.params.get('top_layer')
+        if not top_layer:
+            top_layer = esd_info['top_layer']
+        self._top_layer = top_layer
         if self.grid.get_direction(top_layer) is Orient2D.y:
             self._conn_layer = port_layer = top_layer
         else:
