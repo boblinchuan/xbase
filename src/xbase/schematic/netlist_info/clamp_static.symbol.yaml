@@ -2,10 +2,10 @@ lib_name: xbase
 cell_name: clamp_static
 view_name: symbol
 bbox:
-  - -23
+  - -43
   - -4
   - 218
-  - 244
+  - 224
 terminals:
   VDD:
     obj:
@@ -15,9 +15,9 @@ terminals:
         net: ""
         bbox:
           - 76
-          - 236
+          - 216
           - 84
-          - 244
+          - 224
     stype: 1
     ttype: 2
   VSS:
@@ -35,13 +35,64 @@ terminals:
     ttype: 2
 shapes:
   -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 40
+          - 180
+        -
+          - 40
+          - 190
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 90
+          - 140
+        -
+          - 90
+          - 100
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 40
+          - 120
+        -
+          - 90
+          - 120
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 100
+          - 140
+        -
+          - 100
+          - 100
+        -
+          - 130
+          - 100
+  -
     - 7
     - layer: 229
       purpose: 237
       net: ""
       origin:
         - 70
-        - 234
+        - 214
       alignment: 1
       orient: R270
       font: 5
@@ -50,6 +101,18 @@ shapes:
       visible: true
       drafting: true
       text: VDD
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 100
+          - 140
+        -
+          - 130
+          - 140
   -
     - 7
     - layer: 229
@@ -67,13 +130,49 @@ shapes:
       drafting: true
       text: VSS
   -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 40
+          - 30
+        -
+          - 40
+          - 40
+        -
+          - 20
+          - 50
+        -
+          - 60
+          - 60
+        -
+          - 20
+          - 70
+        -
+          - 60
+          - 80
+        -
+          - 20
+          - 90
+        -
+          - 60
+          - 100
+        -
+          - 40
+          - 110
+        -
+          - 40
+          - 120
+  -
     - 8
     - layer: 236
       purpose: 237
       net: ""
       origin:
         - 90
-        - 230
+        - 200
       alignment: 1
       orient: R0
       font: 5
@@ -89,8 +188,8 @@ shapes:
       purpose: 237
       net: ""
       origin:
-        - 25
-        - 195
+        - 5
+        - 205
       alignment: 4
       orient: R0
       font: 5
@@ -101,6 +200,54 @@ shapes:
       text: "[@partName]"
       evaluator: cdsNLPEvalText
   -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 40
+          - 120
+        -
+          - 40
+          - 130
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 20
+          - 150
+        -
+          - 60
+          - 150
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 40
+          - 170
+        -
+          - 40
+          - 180
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 20
+          - 170
+        -
+          - 60
+          - 170
+  -
     - 0
     - layer: 236
       purpose: 4294967295
@@ -109,17 +256,19 @@ shapes:
         - 0
         - 0
         - 160
-        - 240
+        - 220
   -
-    - 0
+    - 5
     - layer: 231
       purpose: 4294967295
       net: ""
-      bbox:
-        - 40
-        - 60
-        - 120
-        - 180
+      points:
+        -
+          - 40
+          - 130
+        -
+          - 40
+          - 150
   -
     - 5
     - layer: 231
@@ -128,7 +277,7 @@ shapes:
       points:
         -
           - 80
-          - 60
+          - 30
         -
           - 80
           - 0
@@ -140,10 +289,88 @@ shapes:
       points:
         -
           - 80
-          - 180
+          - 190
         -
           - 80
-          - 240
+          - 220
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 130
+          - 140
+        -
+          - 130
+          - 190
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 130
+          - 100
+        -
+          - 130
+          - 30
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 130
+          - 100
+        -
+          - 120
+          - 110
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 130
+          - 100
+        -
+          - 120
+          - 90
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 0
+          - 190
+        -
+          - 160
+          - 190
+  -
+    - 5
+    - layer: 231
+      purpose: 4294967295
+      net: ""
+      points:
+        -
+          - 160
+          - 190
+        -
+          - 160
+          - 30
+        -
+          - 0
+          - 30
+        -
+          - 0
+          - 190
 instances:
   {}
 props:
@@ -166,10 +393,10 @@ props:
 app_defs:
   _dbLastSavedCounter:
     - 0
-    - 150
+    - 247
   _dbvCvTimeStamp:
     - 0
-    - 150
+    - 247
   cdbRevision:
     - 0
     - 227612
